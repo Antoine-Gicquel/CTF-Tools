@@ -1,6 +1,8 @@
-import python-magic
+import magic
 import binwalk
 import string
+import sys
+
 
 ## useful functions
 
@@ -20,6 +22,11 @@ def strings(filename, min=4):
 ## main part
 
 # TODO parse args
+if len(sys.argv) < 2:
+    print("Things are missing. Usage: "+str(sys.argv[0])+" <file>")
+    exit(-1)
+
+file = sys.argv[1]
 
 file_type = magic.from_file(file, mime=True) # equivalent to the 'file' command on Linux
 embedded = binwalk.scan(file) # binwalk scan
