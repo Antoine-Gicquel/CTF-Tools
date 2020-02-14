@@ -1,6 +1,6 @@
 # CTF-Tools
 
-This repo is made up of tools to help you automatize your workflow in CTF (and to make sure you did not forget to check anything).
+This repo is made up of tools to help you automate your workflow in CTF (and to make sure you did not forget to check anything).
 These tools are made to be easy to use, no complicated options !
 
 Currently it is split into 3 parts :
